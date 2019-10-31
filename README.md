@@ -2,7 +2,7 @@
 Friend Finder Full Stack Dating Application
  Friend Finder - Node and Express Servers
 
-### https://ghostly-castle-83905.herokuapp.com/ 
+### https://friend-finderplus.herokuapp.com/
 
 ## Overview:
 
