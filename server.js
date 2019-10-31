@@ -21,10 +21,10 @@ const createApp = () => {
     app.use('/', require('./app/routing/htmlRoutes'));
     // BodyParser makes it easy for our server to interpret data sent to it.
     // The code below is pretty standard.
-    app.use(bodyParser.json());
-    app.use(bodyParser.urlencoded({ extended: true }));
-    app.use(bodyParser.text());
-    app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
+    // app.use(bodyParser.json());
+    // app.use(bodyParser.urlencoded({ extended: true }));
+    // app.use(bodyParser.text());
+    // app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
 
     // ================================================================================
     // ROUTER
