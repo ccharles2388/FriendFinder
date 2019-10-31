@@ -18,7 +18,7 @@ const createApp = () => {
     app.use(express.urlencoded({ extended: true }));
     process.env.NODE_ENV === 'development' && app.use(morgan('dev'))
 
-    app.use('/', require('./server/routes/htmlRoutes'));
+    app.use('/', require('./app/routing/htmlRoutes'));
     // BodyParser makes it easy for our server to interpret data sent to it.
     // The code below is pretty standard.
     app.use(bodyParser.json());
@@ -33,8 +33,8 @@ const createApp = () => {
     // visit or request data from various URLs. 
     // ================================================================================
 
-    require('./app/routing/api-routes.js')(app);
-    require('./app/routing/html-routes.js')(app);
+    require('./app/routing/apiRoutes.js')(app);
+    require('./app/routing/htmlRoutes.js')(app);
 
     // No Need Public Folder In This App 
     // app.use(express.static(path.join(__dirname,  'public')));
