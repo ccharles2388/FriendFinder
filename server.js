@@ -1,66 +1,36 @@
-const express = require('express');
-const path = require('path');
-const fs = require('fs');
-const morgan = require('morgan');
+// Node Dependencies
+var express = require('express');
 var bodyParser = require('body-parser');
-const mysql = require('mysql');
+var path = require('path');
 
-//==============================================================================
-// EXPRESS CONFIGURATION
-// This sets up the basic properties for our express server 
-// ==============================================================================
 
-const PORT = process.env.PORT || 8081;
-const app = express();
 
-const createApp = () => {
-    app.use(express.json());
-    app.use(express.urlencoded({ extended: true }));
-    process.env.NODE_ENV === 'development' && app.use(morgan('dev'))
+// Link in html and api routes
+var apiRoutes = require('./app/routing/apiRoutes.js');
+var htmlRoutes = require('./app/routing/htmlRoutes.js');
 
-    app.use('/', require('./app/routing/htmlRoutes'));
-    // BodyParser makes it easy for our server to interpret data sent to it.
-    // The code below is pretty standard.
-    // app.use(bodyParser.json());
-    // app.use(bodyParser.urlencoded({ extended: true }));
-    // app.use(bodyParser.text());
-    // app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
 
-    // ================================================================================
-    // ROUTER
-    // The below points our server to a series of "route" files.
-    // These routes give our server a "map" of how to respond when users 
-    // visit or request data from various URLs. 
-    // ================================================================================
 
-    require('./app/routing/apiRoutes.js')(app);
-    require('./app/routing/htmlRoutes.js')(app);
+// Set up Express App
+var app = express();
+var PORT = process.env.PORT || 8080;
 
-    // No Need Public Folder In This App 
-    // app.use(express.static(path.join(__dirname,  'public')));
 
-    app.use((err, req, res, next) => {
-        console.error(err);
-        res.pipe(
-            err.status || 500,
-            err.message || 'Internal Server Error'
-        );
-    });
-};
 
-const createConnection = () => {
-    // console.log(db)
-};
+// Sets up the Express app to handle data parsing
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.text());
+app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
 
-const serverListen = () => {
-    app.listen(PORT, () => console.log(`Listening on PORT ${PORT}`));
-};
 
-const run = async () => {
-    await createApp();
-    // Disabled For Now 
-    // await createConnection();
-    await serverListen();
-};
 
-run();
+// Server Routing Map 
+apiRoutes(app); // API route - Must be listed first due to the HTML default catch all "use" route
+htmlRoutes(app); // HTML route 
+
+
+// Listener - Start the server
+app.listen(PORT, function() {
+    console.log("App listening on PORT: " + PORT);
+});
