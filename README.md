@@ -94,14 +94,14 @@ Format: ![Direct Image Link]https://github.com/ccharles2388/Bamazon/blob/master/
 
 ---
 
-## Built with:
+## Technologies Used:
 
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - High-level programming language
 - [Node.js](https://nodejs.org/en/) - Open-source run-time environment that executes JS code outside of a browser
 - [JSON](http://www.json.org) - Data format
 - [MySQL](https://www.mysql.com) - Database
 - [MAMP](https://www.mamp.info/en/) - Access to local PHP server and MYSQL server
-- [Visual Studio Code](https://code.visualstudio.com/) - source code editor developed by Microsoft
+- [Bootstrap](https://getbootstrap.com/docs/4.3/getting-started/introduction/) - Styling Library
 
 #### npm packages used:
 
