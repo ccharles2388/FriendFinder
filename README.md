@@ -6,27 +6,33 @@ Friend Finder Full Stack Dating Application
 
 ## Overview:
 
-FriendFinder is a compatibility-based application -- basically a dating app. This full-stack site takes in results from users surveys, then compare their answers with those from other users. The app will then display the name and picture of the user with the best overall match.
+FriendFinder is a compatibility-based application -- basically a dating app. This full-stack site takes in results from users surveys, then compare theirs answers with those from other users. The app will then display the name and picture of the user with the best overall match.
 
-Express is used to handle routing.
 
-### Instructions
 
-1. Your survey should have 10 questions of your choosing. Each answer should be on a scale of 1 to 5 based on how much the user agrees or disagrees with a question.
+### Features
 
-2. Your `server.js` file should require the basic npm packages we've used in class: `express` and `path`.
+1. The survey has 10 questions. Each answer should be on a scale of 1 to 5 based on how much the user agrees or disagrees with a question.
 
-3. Your `htmlRoutes.js` file should include two routes:
 
-   * A GET Route to `/survey` which should display the survey page.
-   * A default, catch-all route that leads to `home.html` which displays the home page.
 
-4. Your `apiRoutes.js` file should contain two routes:
 
-   * A GET route with the url `/api/friends`. This will be used to display a JSON of all possible friends.
-   * A POST routes `/api/friends`. This will be used to handle incoming survey results. This route will also be used to handle the compatibility logic.
 
-5. You should save your application's data inside of `app/data/friends.js` as an array of objects. Each of these objects should roughly follow the format below.
+### Main File Structure Overview
+
+1. The `server.js` file  requires the basic npm packages : `express`, `body-parser` and `path`.
+
+2. The `htmlRoutes.js` file includes two routes in the routing folder which resides under the app folder:
+
+   * A GET Route to `/survey` displays the survey page.
+   * A default, catch-all route that leads to `home.html` also displays on the home page.
+
+3. The `apiRoutes.js` file also contain two routes in the routing folder which resides under the app folder:
+
+   * A GET route with the url `/api/friends`displays on the main home page. This also displays a JSON of all possible friends.
+   * A POST routes `/api/friends`, handles incoming survey results. This route is also  used to handle the compatibility logic.
+
+4. Application data is saved inside of `app/data/friends.js` as an array of objects. Each of these objects follows the format below:
 
 ```json
 {
@@ -47,19 +53,19 @@ Express is used to handle routing.
 }
 ```
 
-6. Determine the user's most compatible friend using the following as a guide:
+5. Determination of  the user's most compatible friend is done by the following logic method:
 
-   * Convert each user's results into a simple array of numbers (ex: `[5, 1, 4, 4, 5, 1, 2, 5, 4, 1]`).
-   * With that done, compare the difference between current user's scores against those from other users, question by question. Add up the differences to calculate the `totalDifference`.
+   * Converts each user's results into a simple array of numbers (ex: `[5, 1, 4, 4, 5, 1, 2, 5, 4, 1]`).
+   * When that is done, a comparasion of  the difference between current user's scores against those from other users, question by question.  Differences are added up  to calculate the `totalDifference`.
      * Example:
        * User 1: `[5, 1, 4, 4, 5, 1, 2, 5, 4, 1]`
        * User 2: `[3, 2, 6, 4, 5, 1, 2, 5, 4, 1]`
        * Total Difference: **2 + 1 + 2 =** **_5_**
-   * Remember to use the absolute value of the differences. Put another way: no negative solutions! Your app should calculate both `5-3` and `3-5` as `2`, and so on.
+   * Absolute values of the differences are observed. In Other Terms: no negative solutions! App calculates both `5-3` and `3-5` as `2`, and so on.
    * The closest match will be the user with the least amount of difference.
 
-7. Once you've found the current user's most compatible friend, display the result as a modal pop-up.
-   * The modal should display both the name and picture of the closest match.
+6. Once computed you've found the current user's most compatible friend, the results are displayed as a modal pop-up.
+   * The modal displays both the name and picture of the closest match.
 
 ---
 
@@ -75,9 +81,9 @@ Express is used to handle routing.
 #### npm packages used:
 
 - [express](https://www.npmjs.com/package/express) - A collection of common interactive command line user interfaces
-- [mysql](https://www.npmjs.com/package/dotenv) - Node.js driver for MySQL
+- [mysql](https://www.npmjs.com/package/dotenv) - Node.js driver for MySQL ( For Future Expanded Database Usage)
 - [path](https://www.npmjs.com/package/path) - Utilities for working with file and directory paths
-- [morgan](https://www.npmjs.com/package/morgan) - HTTP request logger middleware for node.js
+- [morgan](https://www.npmjs.com/package/morgan) - HTTP request logger middleware for node.js ( For Future Time Tracing)
 - [body-parser](https://www.npmjs.com/package/body-parser) - Node.js body parsing middleware
 
 ---
