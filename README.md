@@ -112,7 +112,9 @@ Format: ![Direct Image Link]https://github.com/ccharles2388/Bamazon/blob/master/
 - [body-parser](https://www.npmjs.com/package/body-parser) - Node.js body parsing middleware
 
 
-5. API Friends List In JSON Tree ( Accessed From Home Page)
+#### API Information And Accessibility:
+
+API Friends List In JSON Tree ( Accessed From Home Page)
 ![GitHub Logo](/img/ff_jsontree.png)
 
 
