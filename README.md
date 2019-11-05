@@ -100,6 +100,7 @@ Format: ![Direct Image Link]https://github.com/ccharles2388/Bamazon/blob/master/
 - [Node.js](https://nodejs.org/en/) - Open-source run-time environment that executes JS code outside of a browser
 - [JSON](http://www.json.org) - Data format
 - [MySQL](https://www.mysql.com) - Database
+- [JQUERY](https://learn.jquery.com/using-jquery-core/) - Javascript Library
 - [MAMP](https://www.mamp.info/en/) - Access to local PHP server and MYSQL server
 - [Bootstrap](https://getbootstrap.com/docs/4.3/getting-started/introduction/) - Styling Library
 
