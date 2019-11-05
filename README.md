@@ -10,10 +10,35 @@ FriendFinder is a compatibility-based application -- basically a dating app. Thi
 
 
 
-### Features
+### Friend Finder Plus Application Features And Screen Shots
 
-1. The survey has 10 questions. Each answer should be on a scale of 1 to 5 based on how much the user agrees or disagrees with a question.
+1. User goes to https://friend-finderplus.herokuapp.com/ and is displayed a survey. The survey has 10 questions. Each answer should be on a scale of 1 to 5 based on how much the user agrees or disagrees with a question.
 
+2. User Is Displayed Friend Finder Plus Application 
+![GitHub Logo](/img/ff_1.png)
+
+Format: ![Direct Image Link]https://github.com/ccharles2388/Bamazon/blob/master/img/ff_1.png)
+<br>
+
+3. User Answers Questions On Screen Shot  1
+![GitHub Logo](/img/ff_2.png)
+
+
+Format: ![Direct Image Link]https://github.com/ccharles2388/Bamazon/blob/master/img/ff_2.png)
+<br>
+
+4. User Answers Questions On Screen Shot  2
+![GitHub Logo](/img/ff_3.png)
+
+Format: ![Direct Image Link]https://github.com/ccharles2388/Bamazon/blob/master/img/ff_3.png)
+<br>
+
+5. User Answers Questions On Screen Shot  3
+![GitHub Logo](/img/ff_4.png)
+
+
+Format: ![Direct Image Link]https://github.com/ccharles2388/Bamazon/blob/master/img/ff_4.png)
+<br>
 
 
 
@@ -86,4 +111,16 @@ FriendFinder is a compatibility-based application -- basically a dating app. Thi
 - [morgan](https://www.npmjs.com/package/morgan) - HTTP request logger middleware for node.js ( For Future Time Tracing)
 - [body-parser](https://www.npmjs.com/package/body-parser) - Node.js body parsing middleware
 
----
+
+5. API Friends List In JSON Tree ( Accessed From Home Page)
+![GitHub Logo](/img/ff_jsontree.png)
+
+
+Format: ![Direct Image Link]https://github.com/ccharles2388/Bamazon/blob/master/img/ff_jsontree.png)
+<br>
+
+-------------------------------------------------------------------------------------------------------------------------
+
+### Author
+
+* Curtis Charles
