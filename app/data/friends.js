@@ -81,7 +81,7 @@ var friends = [
     },
     {
         "name": "Michael Heinemann",
-        "photo": "https://scontent-den4-1.xx.fbcdn.net/v/t1.0-1/p320x320/23844939_10155845237714857_1815845725643545314_n.jpg?_nc_cat=110&_nc_ht=scontent-den4-1.xx&oh=44b233213bf776d49086fa23ab6b6d8b&oe=5D31C18D",
+        "photo": "https://github.com/ccharles2388/FriendFinder/blob/master/app/data/erin.jpg",
         "scores": [
             "4",
             "4",
