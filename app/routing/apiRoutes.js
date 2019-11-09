@@ -4,7 +4,7 @@
 // These data sources hold arrays of information on all possible friends
 // ===============================================================================
 
-var friends 		= require('../data/friends.js');
+var friends = require('../data/friends.js');
 
 
 // ===============================================================================
