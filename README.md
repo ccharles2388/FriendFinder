@@ -17,27 +17,27 @@ FriendFinder is a compatibility-based application -- basically a dating app. Thi
 2. User Is Displayed Friend Finder Plus Application 
 ![GitHub Logo](/img/ff_1.png)
 
-Format: ![Direct Image Link]https://github.com/ccharles2388/Bamazon/blob/master/img/ff_1.png)
+Format: ![Direct Image Link]https://github.com/ccharles2388/FriendFinder/blob/master/img/ff_1.png)
 <br>
 
 3. User Answers Questions On Screen Shot  1
 ![GitHub Logo](/img/ff_2.png)
 
 
-Format: ![Direct Image Link]https://github.com/ccharles2388/Bamazon/blob/master/img/ff_2.png)
+Format: ![Direct Image Link]https://github.com/ccharles2388/FriendFinder/blob/master/img/ff_2.png)
 <br>
 
 4. User Answers Questions On Screen Shot  2
 ![GitHub Logo](/img/ff_3.png)
 
-Format: ![Direct Image Link]https://github.com/ccharles2388/Bamazon/blob/master/img/ff_3.png)
+Format: ![Direct Image Link]https://github.com/ccharles2388/FriendFinder/blob/master/img/ff_3.png)
 <br>
 
 5. User Answers Questions On Screen Shot  3
 ![GitHub Logo](/img/ff_4.png)
 
 
-Format: ![Direct Image Link]https://github.com/ccharles2388/Bamazon/blob/master/img/ff_4.png)
+Format: ![Direct Image Link]https://github.com/ccharles2388/FriendFinder/blob/master/img/ff_4.png)
 <br>
 
 
@@ -119,7 +119,7 @@ API Friends List In JSON Tree ( Accessed From Home Page)
 ![GitHub Logo](/img/ff_jsontree.png)
 
 
-Format: ![Direct Image Link]https://github.com/ccharles2388/Bamazon/blob/master/img/ff_jsontree.png)
+Format: ![Direct Image Link]https://github.com/ccharles2388/FriendFinder/blob/master/img/ff_jsontree.png)
 <br>
 
 -------------------------------------------------------------------------------------------------------------------------
