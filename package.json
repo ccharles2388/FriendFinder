@@ -4,7 +4,7 @@
   "description": "Friend Finder Full Stack Dating Application  Friend Finder - Node and Express Servers",
   "main": "server.js",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "morgan": "^1.9.1",
     "mysql": "^2.17.1",
     "node-watch": "^0.6.3",
